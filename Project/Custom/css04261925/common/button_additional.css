@@ -1,0 +1,31 @@
+﻿/*
+    http://twitterbootstrap3buttons.w3masters.nl/?color=%23800000
+    color:maroon
+*/
+
+.btn-custom {
+    color: white;
+}
+
+    .btn-custom:hover {
+        background-color: lightcoral;
+    }
+
+.dropdown-toggle:active, .open .dropdown-toggle {
+    background: lightcoral !important;
+    color: white;
+}
+
+.open .dropdown-menu {
+    background-color: maroon;
+}
+
+    .open .dropdown-menu > li > a, .open .dropdown-menu {
+        background-color: maroon;
+        color: white;
+    }
+
+        .open .dropdown-menu > li > a:hover {
+            background-color: lightcoral;
+            color: white;
+        }

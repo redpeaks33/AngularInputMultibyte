@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Main">
+
+<head>
+    <title>英単語キュレーション</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.4.8/angular-sanitize.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js"></script>
+
+    <script src="Custom/js/controller.js?20160410"></script>
+    <script src="Custom/js/router.js?20160410"></script>
+
+    <!--common-->
+    <link href="Custom/css/common/navbar.css?20160410" rel="stylesheet" />
+    <link href="Custom/css/common/button.css?20160410" rel="stylesheet" />
+    <link href="Custom/css/common/button_additional.css?20160410" rel="stylesheet" />
+    <link href="Custom/css/common/homepage.css?0426" rel="stylesheet" />
+    <link href="Custom/css/common/list.css?0426" rel="stylesheet" /><!--List-->
+    <link href="Custom/css/common/view.css?0430" rel="stylesheet" /><!--View-->
+    <link href="Custom/css/common/pagenation.css?0426" rel="stylesheet" /><!--Pagenation-->
+    <!--smartphone-->
+    <link href="Custom/css/smartphone/list.css?0426" rel="stylesheet" /><!--List-->
+    <link href="Custom/css/smartphone/view.css?0430" rel="stylesheet" /><!--View-->
+    <link href="Custom/css/smartphone/homepage.css?0426" rel="stylesheet" /><!--Pagenation-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76229901-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div ng-controller="MainCtrl" ng-init="initializeMain()">
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <ul class="nav navbar-nav">
+                <li class="logo"><a href="/">英単語キュレーション</a></li>
+                <li class="subtitle">
+                    新しい英単語暗記法
+                </li>
+                <!--<li class=""><a ng-click='changeLevelCategory(0)'>学生Level</a></li>
+                <li class=""><a ng-click='changeLevelCategory(10)'>社会人Level</a></li>
+                <li class=""><a ng-click='changeLevelCategory(20)'>専門Level</a></li>-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">学生Level<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="n in range(1,10)"><a class="btn-select" ng-click="levelSearch('WORDLEVEL' + n)">LEVEL&nbsp;{{n}}</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">社会人Level<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="n in range(11,20)"><a class="btn-select" ng-click="levelSearch('WORDLEVEL' + n)">LEVEL&nbsp;{{n}}</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">専門家Level<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="n in range(21,30)"><a class="btn-select" ng-click="levelSearch('WORDLEVEL' + n)">LEVEL&nbsp;{{n}}</a></li>
+                    </ul>
+                </li>
+
+                <li class=""><a href="http://127939.peta2.jp/1314108.html" target="_blank">自由掲示板</a></li>
+                <li class=""><a href="https://wordchunkblog.wordpress.com/" target="_blank">開発掲示板</a></li>
+                <!--<li class=""><a href="/Custom/html/ImageTest_DB.html" target="_blank">ImageTest_DB</a></li>
+                <li class=""><a href="/Custom/html/ImageTest_Thumnail.html" target="_blank">ImageTest_Thumnail</a></li>-->
+            </ul>
+            <div class="form-group ">
+                <span class="social-button-area">
+                    <div id="boxArea" style="display:table;padding:0 0 0 2px;">
+                        <div style="width:74px;height:22px;float:left;">
+                            <a href="https://twitter.com/share" class="twitter-share-button" {count} data-via="英単語キュレーション" data-lang="ja" data-hashtags="英単語 暗記" data-dnt="true">ツイート</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                        <div style="width:36px;height:22px;float:left;">
+                            <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+                            <script type="text/javascript">
+                                window.___gcfg = { lang: 'ja' };
+                                (function () {
+                                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                    po.src = 'https://apis.google.com/js/platform.js';
+                                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                })();</script>
+                        </div>
+                        <div style="width:82px;height:22px;float:left;">
+                            <a href="http://b.hatena.ne.jp/entry/http://wordchunk.azurewebsites.net/" class="hatena-bookmark-button" data-hatena-bookmark-title="英単語キュレーション" data-hatena-bookmark-layout="standard-noballoon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+                            <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                        </div>
+                        <div style="width:67px;height:22px;float:left;"><a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="en"></a></div><div style="width:86px;height:22px;float:left;">
+                            <span>
+                                <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411"></script>
+                                <script type="text/javascript">                            new media_line_me.LineButton({ "pc": true, "lang": "ja", "type": "a" });</script>
+                            </span>
+                        </div><div style="width:66px;height:22px;float:left;">
+                            <script src="//platform.linkedin.com/in.js" type="text/javascript">                            lang: ja_JP</script>
+                            <script type="IN/Share">
+                            </script>
+                        </div>
+                    </div>
+                    <script type="text/javascript">                            !function (d, i) { if (!d.getElementById(i)) { var j = d.createElement("script"); j.id = i; j.src = "https://widgets.getpocket.com/v1/j/btn.js?v=1"; var w = d.getElementById(i); d.body.appendChild(j); } }(document, "pocket-btn-js");</script>
+                </span>
+            </div>
+        </nav>
+        <div class="loadingIcon" ng-show="isLoading">
+            <i class="fa fa-spinner fa-3x fa-spin"></i>
+        </div>
+        <div class="contents" ng-show="!isLoading">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+</html>

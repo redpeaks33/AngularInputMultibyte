@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDDE50DB-B069-496D-B01D-D2CF39A0F0BF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Routing</RootNamespace>
+    <AssemblyName>Routing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Utility\lib\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Utility\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\css\button.css" />
+    <Content Include="Common\css\button_additional.css" />
+    <Content Include="Common\css\homepage.css" />
+    <Content Include="Common\css\list.css" />
+    <Content Include="Common\css\navbar.css" />
+    <Content Include="Common\css\pagenation.css" />
+    <Content Include="Common\css\view.css" />
+    <Content Include="Common\html\libraryList.html" />
+    <Content Include="Common\js\controller.js" />
+    <Content Include="Common\js\router.js" />
+    <Content Include="Custom\css04261925\common\button.css" />
+    <Content Include="Custom\css04261925\common\button_additional.css" />
+    <Content Include="Custom\css04261925\common\homepage.css" />
+    <Content Include="Custom\css04261925\common\list.css" />
+    <Content Include="Custom\css04261925\common\navbar.css" />
+    <Content Include="Custom\css04261925\common\view.css" />
+    <Content Include="Custom\css04261925\mobile_landscape\homepage.css" />
+    <Content Include="Custom\css04261925\mobile_landscape\list.css" />
+    <Content Include="Custom\css04261925\mobile_landscape\view.css" />
+    <Content Include="Custom\css04261925\mobile_portrait\homepage.css" />
+    <Content Include="Custom\css04261925\mobile_portrait\list.css" />
+    <Content Include="Custom\css04261925\mobile_portrait\view.css" />
+    <Content Include="Custom\css04261925\pc\homepage.css" />
+    <Content Include="Custom\css04261925\pc\list.css" />
+    <Content Include="Custom\css04261925\pc\view.css" />
+    <Content Include="Custom\css\common\button.css" />
+    <Content Include="Custom\css\common\button_additional.css" />
+    <Content Include="Custom\css\common\homepage.css" />
+    <Content Include="Custom\css\common\list.css" />
+    <Content Include="Custom\css\common\navbar.css" />
+    <Content Include="Custom\css\common\pagenation.css" />
+    <Content Include="Custom\css\common\view.css" />
+    <Content Include="Custom\css\smartphone\homepage.css" />
+    <Content Include="Custom\css\smartphone\list.css" />
+    <Content Include="Custom\css\smartphone\view.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="index.html" />
+    <Content Include="lib\angularjs-geolocation.min.js" />
+    <Content Include="lib\ngGeolocation.min.js" />
+    <Content Include="View\Mobile\css\button.css" />
+    <Content Include="View\Mobile\css\button_additional.css" />
+    <Content Include="View\Mobile\css\pagenation.css" />
+    <Content Include="View\Mobile\css\topnavbar.css" />
+    <Content Include="View\Mobile\css\sitebasic.css" />
+    <Content Include="View\Mobile\css\mainfunction.css" />
+    <Content Include="View\Mobile\css\wordinfo.css" />
+    <Content Include="View\Mobile\css\wordmeaning.css" />
+    <Content Include="View\Mobile\css\news.css" />
+    <Content Include="View\Mobile\css\wordtable.css" />
+    <Content Include="View\Mobile\css\navbar.css" />
+    <Content Include="View\Mobile\css\imagetable.css" />
+    <Content Include="View\Mobile\html\index.html" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\wordchunk %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\wordchunk.pubxml" />
+    <None Include="Properties\PublishProfiles\wordchunktest.pubxml" />
+    <Content Include="View\locale\ja.js" />
+    <Content Include="View\locale\en.js" />
+    <Content Include="View\locale\ko.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Custom\index.html" />
+    <Content Include="View\Mobile\html\news.html" />
+    <Content Include="View\Mobile\html\mainfunction.html" />
+    <Content Include="View\Mobile\html\wordinfo.html" />
+    <Content Include="View\Mobile\html\wordtable.html" />
+    <Content Include="View\Mobile\html\wordmeaning.html" />
+    <Content Include="View\Mobile\html\imagetable.html" />
+    <Content Include="View\Mobile\html\topnavbar.html" />
+    <Content Include="View\Mobile\js\directive.js" />
+    <Content Include="View\Mobile\js\main.js" />
+    <Content Include="View\Mobile\js\maincontroller.js" />
+    <Content Include="View\Mobile\js\router.js" />
+    <Content Include="View\PC\css\button.css" />
+    <Content Include="View\PC\css\button_additional.css" />
+    <Content Include="View\PC\css\imagetable.css" />
+    <Content Include="View\PC\css\mainfunction.css" />
+    <Content Include="View\PC\css\navbar.css" />
+    <Content Include="View\PC\css\news.css" />
+    <Content Include="View\PC\css\pagenation.css" />
+    <Content Include="View\PC\css\sitebasic.css" />
+    <Content Include="View\PC\css\topnavbar.css" />
+    <Content Include="View\PC\css\wordinfo.css" />
+    <Content Include="View\PC\css\wordmeaning.css" />
+    <Content Include="View\PC\css\wordtable.css" />
+    <Content Include="View\PC\html\imagetable.html" />
+    <Content Include="View\PC\html\index.html" />
+    <Content Include="View\PC\html\mainfunction.html" />
+    <Content Include="View\PC\html\news.html" />
+    <Content Include="View\PC\html\topnavbar.html" />
+    <Content Include="View\PC\html\wordinfo.html" />
+    <Content Include="View\PC\html\wordmeaning.html" />
+    <Content Include="View\PC\html\wordtable.html" />
+    <Content Include="View\PC\js\directive.js" />
+    <Content Include="View\PC\js\main.js" />
+    <Content Include="View\PC\js\config.js" />
+    <Content Include="View\PC\js\maincontroller.js" />
+    <Content Include="View\PC\js\router.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utility\CommonUtility\CommonUtility.csproj">
+      <Project>{cd806cfd-3149-4513-b0ec-8f80677770c1}</Project>
+      <Name>CommonUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\DBAccessor\DBAccessor.csproj">
+      <Project>{c65da805-1b2a-4c96-93bc-58abce385d26}</Project>
+      <Name>DBAccessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebAPIController\WebAPIController.csproj">
+      <Project>{230e28ef-c45a-45d9-b082-49593ec64ce5}</Project>
+      <Name>WebAPIController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WordCurationEngine\WordCurationEngine.csproj">
+      <Project>{8cb92f9e-1486-44fc-89d8-74b982f196c1}</Project>
+      <Name>WordCurationEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Custom\css\pc\" />
+    <Folder Include="Custom\css\tablet\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58375</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

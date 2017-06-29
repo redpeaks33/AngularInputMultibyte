@@ -1,0 +1,86 @@
+﻿.st-sort-ascent:before {
+    content: '\25B2';
+}
+
+.st-sort-descent:before {
+    content: '\25BC';
+}
+
+.RowSelected {
+}
+
+    .RowSelected:hover {
+        background-color: lightcoral;
+    }
+
+.baseContainerPane {
+    margin: 0px 10px 0px 0px;
+}
+
+.listPane {
+    max-height: 80vh;
+}
+
+.wordPane {
+    font-family: 'Malgun Gothic';
+    font-size: large;
+    font-weight: bold;
+}
+
+.tableHeader {
+    text-align: center;
+    font-family: 'Malgun Gothic';
+    font-size: x-large;
+    font-weight: bold;
+}
+/*pagination*/
+.pagination > li > a,
+.pagination > li > span {
+    border: 1px solid maroon;
+    color: maroon;
+    background-color: white;
+}
+
+    .pagination > li > a:hover,
+    .pagination > li > span:hover {
+        border: 1px solid maroon;
+        color: white;
+        background-color: lightcoral;
+    }
+
+.pagination > li.active > a {
+    background: maroon;
+    border-color: maroon;
+    color: white;
+}
+
+    .pagination > li.active > a:hover {
+        background: maroon;
+        border-color: maroon;
+        color: white;
+    }
+
+.functionArea {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.social-button {
+    float: right;
+    margin: 3px 0px 0px 0px;
+}
+
+.function-button-area {
+    margin: -5px 0px 0px -10px;
+    padding: 0px 0px 0px 0px;
+}
+
+.btn-rank {
+    background-color: maroon;
+    color: white;
+}
+
+.btn-select {
+    background-color: maroon;
+    color: white;
+}

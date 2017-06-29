@@ -1,0 +1,11 @@
+﻿.imagetable {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.img-size {
+    width: 20.0%;
+    height: 100px;
+    margin: 0px -5px 0px 0px !important;
+}

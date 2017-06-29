@@ -1,0 +1,28 @@
+﻿html {
+}
+
+body {
+    background-color: ghostwhite;
+    padding: 70px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.logo {
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+    font-size: large;
+}
+
+.subtitle {
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+    font-size: small;
+    color: white;
+    padding-top: 20px;
+}
+
+.social-button-area {
+    float: right;
+    vertical-align: middle;
+    margin: 15px 20px 0px 0px;
+}

@@ -1,0 +1,23 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wordtable">
+    <div class="">
+        <table st-table="displayedlist" st-safe-src="list" class="table table-condensed" ng-show="showTable">
+            <tbody>
+                <tr ng-repeat="words in displayedlist">
+                    <td ng-repeat="word in words" ng-click="setDetailView(word)">
+                        {{word.word}}
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="word-table-pagenation">
+                            <div st-pagination="" st-items-by-page="20" st-displayed-pages="7" st-page-change="changePage()"></div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+﻿.wordmeaning {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    /*fixed height*/
+    line-height: 15px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.meaning_jp, .meaning_en {
+    font-size: 15px;
+    line-height: 20px;
+}

@@ -1,0 +1,40 @@
+﻿@media screen and (max-width: 1023px) {
+    input[type="text"] {
+        font-size: 24px;
+        height: 70px;
+    }
+
+    .functionarea {
+        margin: 50px 0px 0px 0px;
+    }
+
+    .btn-rank {
+        height: 70px;
+        width: 140px;
+        font-size: 32px;
+        background-color: maroon;
+        color: white;
+    }
+
+    .btn-select {
+        font-size: 24px;
+        background-color: maroon;
+        color: white;
+    }
+
+    span {
+        font-size: xx-large;
+    }
+
+    .tableArea {
+        height: 50vh;
+        overflow: scroll;
+        margin: 10px 0px 10px 0px;
+    }
+
+    table {
+        font-size: 42px;
+        margin: 5px 0px 5px 0px;
+        max-width: 100%;
+    }
+}

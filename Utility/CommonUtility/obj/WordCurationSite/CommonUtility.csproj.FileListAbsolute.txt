@@ -1,0 +1,8 @@
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\CommonUtility.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\CommonUtility.pdb
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\HtmlAgilityPack.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\log4net.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\HtmlAgilityPack.pdb
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\bin\WordCurationSite\HtmlAgilityPack.xml
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\obj\WordCurationSite\CommonUtility.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\CommonUtility\obj\WordCurationSite\CommonUtility.pdb

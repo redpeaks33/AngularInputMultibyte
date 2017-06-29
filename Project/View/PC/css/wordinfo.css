@@ -1,0 +1,30 @@
+﻿.wordinfo {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 5px 0px 0px;
+    display: flex;
+    /*fixed height*/
+    line-height: 50px;
+    height: 60px;
+    max-height: 60px;
+    overflow: auto;
+}
+
+.word {
+    font-size: 40px;
+    flex-basis: 50%;
+    padding: 0px 0px 0px 5px;
+    border: 5px solid lightcoral;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sound {
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.phonetic {
+    font-size: 20px;
+    flex-basis: 40%;
+    text-align: center;
+}

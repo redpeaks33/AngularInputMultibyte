@@ -1,0 +1,18 @@
+﻿html {
+}
+
+body {
+    background-color: ghostwhite;
+    padding: 60px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #630;
+    font-weight: bold;
+}
+
+.loadingIcon {
+    margin: 100px 0px 0px 0px;
+    align-content: center;
+    text-align: center;
+}

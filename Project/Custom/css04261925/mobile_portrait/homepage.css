@@ -1,0 +1,23 @@
+﻿@media screen and (max-width: 1080px) and (orientation:landscape) {
+    html {
+    }
+
+    body {
+    }
+
+    /*diff*/
+    .logo {
+        font-size: 36px;
+    }
+    /*diff*/
+    .subtitle {
+        font-size: x-large;
+    }
+
+    /*diff*/
+    .btn-custom {
+        height: 70px;
+        width: 70px;
+        margin: 0px 5px 0px 5px;
+    }
+}

@@ -1,0 +1,105 @@
+﻿.viewAreaFrame {
+    border: 10px solid lightcoral;
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+/*btn area*/
+.btn-area {
+    margin: 0px 0px 10px 0px;
+}
+
+.align-left {
+    float: left;
+    width: 10%;
+}
+
+.align-center {
+    text-align: center;
+    width: 80%;
+}
+
+.align-right {
+    float: right;
+}
+/*btn area*/
+.wordArea {
+    text-align: center;
+    vertical-align: text-top;
+    height: 95px;
+    font-size: 64px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+    margin: -10px 0px 0px 0px;
+}
+
+.wordSupportInfoArea {
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.meaning_jp {
+    font-size: 24px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+
+.phonetic {
+    font-size: 24px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+/*word area*/
+
+/*image area*/
+.imageArea {
+    height: 100%;
+    text-align: center;
+}
+
+.img-padding {
+    width: 18%;
+    height: 180px;
+    margin: auto;
+}
+/*image area*/
+
+/*meaningInfoArea*/
+.meaningArea {
+    min-height: 120px;
+    padding: 0px 5px 0px 5px;
+    font-size: x-large;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+
+.meaning_en {
+    font-size: 32px;
+    font-family: 'Malgun Gothic';
+    font-weight: bold;
+}
+/*meaningInfoArea*/
+
+/*ArticleInfoArea*/
+.articleArea img{
+    height:120px;
+    width:120px;
+}
+/*ArticleInfoArea*/
+
+.articleArea table td:hover{
+}
+
+.articleArea table tr td:nth-child(1){
+	  width: 10%;
+}
+
+.articleArea table tr td:nth-child(2){
+	  width: 40%;
+}
+.articleArea table tr td:nth-child(3){
+	  width: 20%;
+}
+.articleArea table tr td:nth-child(4){
+	  width: 10%;
+}

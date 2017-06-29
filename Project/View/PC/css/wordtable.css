@@ -1,0 +1,41 @@
+﻿.wordtable {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    /*fixed height*/
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+    .wordtable table {
+        max-height: 1000px;
+        border-radius: 5px;
+    }
+
+        .wordtable table td {
+            max-width: 20px;
+            font-size: 16px;
+            /*font-weight: bold;
+            font-family: Courier New, Courier, monospace;*/
+            overflow: hidden;
+        }
+
+        .wordtable table tbody td {
+            border-right: 1px dashed gray;
+        }
+
+        .wordtable table tbody {
+            border: 5px solid lightcoral;
+            border-radius: 5px;
+        }
+
+            .wordtable table tbody td:hover {
+                background-color: lightcoral;
+            }
+
+.word-table-pagenation {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: -20px 0px -25px 0px;
+}

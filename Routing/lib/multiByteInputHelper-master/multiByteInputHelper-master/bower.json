@@ -1,0 +1,21 @@
+{
+  "name": "multiByteInputHelper",
+  "version": "0.0.2",
+  "authors": [
+    "songsl@gmail.com"
+  ],
+  "description": "multibyte input helper for angularJS",
+  "main": "multiByteInputHelper.js",
+  "keywords": [
+    "multibyte"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/songsl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

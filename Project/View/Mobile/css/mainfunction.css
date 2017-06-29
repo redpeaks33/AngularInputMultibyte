@@ -1,0 +1,25 @@
+﻿.mainfunction {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item1 {
+    text-align: center;
+    flex-basis: 30%;
+    margin: 0px 10px 0px 0px;
+}
+
+.flex-item2 {
+    flex-basis: 40%;
+    margin: 0px 10px 0px 0px;
+}
+
+.flex-item3 {
+    flex-basis: 40%;
+}

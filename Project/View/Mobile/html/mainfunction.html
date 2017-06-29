@@ -1,0 +1,35 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mainfunction">
+    <div class="flex-container">
+        <div class="flex-item1">
+            <span ng-bind-html='tableHeader' />
+        </div>
+        <div class="flex-item2">
+            <div class="input-group">
+                <input type="number" class="form-control input-md" placeholder="1~30" ng-model="inputLevel" ng-trim="true" ng-keyup="$event.keyCode == 13 && SearchLevel(inputLevel)" required min="1" max="30">
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="button" ng-click="SearchLevel(inputLevel)">Level</button>
+                </span>
+            </div>
+        </div>
+
+        <div class="flex-item3">
+            <div class="input-group">
+                <input type="text" class="form-control input-md" placeholder="英単語検索" ng-model="searchstring" ng-trim="true" ng-keyup="$event.keyCode == 13 && Search(searchstring)">
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="button" ng-click="Search(searchstring)"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+        <!--<div class="flex-item3">
+            <button class="btn btn-custom" ng-model="onRandom" ng-click="randomSearch(searchstring)"><span class="glyphicon glyphicon-random" /></button>
+            <button class="btn btn-custom" type="button" ng-click="autoplay()"><span class="glyphicon glyphicon-play" /></button>
+            <button class="btn btn-custom" type="button" ng-click="changeTableFormat()"><span class="glyphicon glyphicon-th" /></button>
+            <button class="btn btn-custom " ng-click="stepBackward()"><span class="glyphicon glyphicon-step-backward" /></button>
+            <button class="btn btn-custom" ng-model="onWord" ng-click="onWord = !onWord"><span>語</span></button>
+            <button class="btn btn-custom" ng-model="onPronounce" ng-click="onPronounce = !onPronounce"><span>発</span></button>
+            <button class="btn btn-custom" ng-model="onPronounce" ng-click="onPronounce = !onPronounce" style="display:none"><span>発</span></button>
+            <button class="btn btn-custom" ng-model="onTranslation" ng-click="onTranslation = !onTranslation"><span>訳</span></button>
+            <button class="btn btn-custom " ng-click="stepForward()"><span class="glyphicon glyphicon-step-forward" /></button>
+        </div>-->
+    </div>
+</div>

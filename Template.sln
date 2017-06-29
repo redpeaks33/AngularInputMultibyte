@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Project(1)", "Project\", "{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{cd806cfd-3149-4513-b0ec-8f80677770c1}|CommonUtility.dll;{c65da805-1b2a-4c96-93bc-58abce385d26}|DBAccessor.dll;{230e28ef-c45a-45d9-b082-49593ec64ce5}|WebAPIController.dll;{8CB92F9E-1486-44FC-89D8-74B982F196C1}|WordCurationEngine.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53566"
+		Debug.AspNetCompiler.PhysicalPath = "Project\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53566\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53566"
+		Release.AspNetCompiler.PhysicalPath = "Project\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53566\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53566"
+		SlnRelativePath = "Project\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIController", "WebAPIController\WebAPIController.csproj", "{230E28EF-C45A-45D9-B082-49593EC64CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBAccessor", "Utility\DBAccessor\DBAccessor.csproj", "{C65DA805-1B2A-4C96-93BC-58ABCE385D26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonUtility", "Utility\CommonUtility\CommonUtility.csproj", "{CD806CFD-3149-4513-B0EC-8F80677770C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCurationEngine", "WordCurationEngine\WordCurationEngine.csproj", "{8CB92F9E-1486-44FC-89D8-74B982F196C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		WordCurationSite|Any CPU = WordCurationSite|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.WordCurationSite|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C1EF7D-5E88-49DD-98FA-C1ED04EB3154}.WordCurationSite|Any CPU.Build.0 = Debug|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.WordCurationSite|Any CPU.ActiveCfg = Release|Any CPU
+		{230E28EF-C45A-45D9-B082-49593EC64CE5}.WordCurationSite|Any CPU.Build.0 = Release|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.WordCurationSite|Any CPU.ActiveCfg = WordCurationSite|Any CPU
+		{C65DA805-1B2A-4C96-93BC-58ABCE385D26}.WordCurationSite|Any CPU.Build.0 = WordCurationSite|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.WordCurationSite|Any CPU.ActiveCfg = WordCurationSite|Any CPU
+		{CD806CFD-3149-4513-B0EC-8F80677770C1}.WordCurationSite|Any CPU.Build.0 = WordCurationSite|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.WordCurationSite|Any CPU.ActiveCfg = WordCurationSite|Any CPU
+		{8CB92F9E-1486-44FC-89D8-74B982F196C1}.WordCurationSite|Any CPU.Build.0 = WordCurationSite|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

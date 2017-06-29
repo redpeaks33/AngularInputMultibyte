@@ -1,0 +1,5 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imagetable">
+    <ng-repeat ng-repeat="imageInfo in live.imageInfoList | limitTo:10">
+        <a href={{imageInfo.url}} target="_blank"><img ng-src={{imageInfo.thumnailUrl}} class="img-thumbnail img-size" /></a>
+    </ng-repeat>
+</div>

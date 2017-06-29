@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Main" ng-controller="MainController" ng-init="initializeMain('Mobile')">
+
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title translate="TITLE" ng-cloak></title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.4.8/angular-sanitize.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.8/smart-table.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-sanitize.min.js"></script>
+    <!--translate-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.13.1/angular-translate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.13.1/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <!--geolocation-->
+    <script src="/lib/ngGeolocation.min.js"></script>
+
+    <!--common js-->
+    <script src="/View/PC/js/main.js"></script>
+    <script src="/View/PC/js/maincontroller.js"></script>
+    <script src="/View/PC/js/router.js"></script>
+    <!--unique js-->
+    <script src="/View/PC/js/directive.js"></script>
+    <script src="/View/PC/js/config.js"></script>
+
+    <!--common css-->
+    <link href="/View/PC/css/navbar.css?20160411" rel="stylesheet" />
+    <link href="/View/PC/css/topnavbar.css" rel="stylesheet" />
+    <link href="/View/PC/css/sitebasic.css" rel="stylesheet" />
+    <link href="/View/PC/css/button.css?20160411" rel="stylesheet" />
+    <link href="/View/PC/css/button_additional.css?20160411" rel="stylesheet" />
+    <link href="/View/PC/css/imagetable.css" rel="stylesheet" />
+    <link href="/View/PC/css/mainfunction.css" rel="stylesheet" />
+    <link href="/View/PC/css/news.css" rel="stylesheet" />
+    <link href="/View/PC/css/wordinfo.css" rel="stylesheet" />
+    <link href="/View/PC/css/wordmeaning.css" rel="stylesheet" />
+    <link href="/View/PC/css/wordtable.css" rel="stylesheet" />
+    <link href="/View/PC/css/pagenation.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <topnavbar></topnavbar>
+        <div class="container-fluid" ng-show="!isLoading">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <mainfunction></mainfunction>
+                    <wordtable></wordtable>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <wordinfo></wordinfo>
+                    <imagetable></imagetable>
+                    <wordmeaning></wordmeaning>
+                    <news></news>
+                </div>
+            </div>
+        </div>
+        <div class="loadingIcon" ng-show="isLoading">
+            <i class="fa fa-spinner fa-3x fa-spin"></i>
+        </div>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-76229901-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿.st-sort-ascent:before {
+    content: '\25B2';
+}
+
+.st-sort-descent:before {
+    content: '\25BC';
+}
+
+.container {
+    max-width: 100%;
+}
+
+.btn-rank {
+    background-color: maroon;
+    color: white;
+}
+
+.btn-select {
+    background-color: maroon;
+    color: white;
+}
+
+.tableArea {
+    margin-top: 5px;
+}
+
+.tableHeader {
+    background-color: lightcoral;
+    border-radius: 5px;
+    text-align: left;
+}
+
+table {
+    font-family: 'Malgun Gothic';
+    font-size: large;
+    font-weight: bold;
+    overflow: scroll;
+}
+
+tbody tr {
+    max-height: 20px;
+}
+
+    .tableArea tbody tr td:hover {
+        background-color: lightcoral;
+    }
+
+    .loadingIcon{
+        align-content:center;
+        text-align:center;
+    }

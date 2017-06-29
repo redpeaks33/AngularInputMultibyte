@@ -1,0 +1,32 @@
+﻿@media screen and (max-width: 1080px) and (orientation:portrait) {
+    html {
+    }
+
+    body {
+        background-color: ghostwhite;
+        padding: 70px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .logo {
+        font-family: 'Malgun Gothic';
+        font-weight: bold;
+        font-size: 36px; /*diff*/
+        margin: 10px 0px 10px 10px;
+    }
+
+    .subtitle {
+        font-family: 'Malgun Gothic';
+        font-weight: bold;
+        font-size: x-large; /*diff*/
+        color: white;
+        padding-top: 20px;
+    }
+
+    /*diff*/
+    .btn-custom {
+        height: 70px;
+        width: 70px;
+        margin: 0px 5px 0px 5px;
+    }
+}

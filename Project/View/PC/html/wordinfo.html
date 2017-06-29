@@ -1,0 +1,8 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wordinfo">
+
+    <span class="word" ng-show="onWord">{{live.level}}&nbsp;{{live.word}}</span>
+    <div class="form-group sound" ng-if="existSound">
+        <button id="pronounceButton" class="btn btn-custom" ng-click="play()"><span class="glyphicon glyphicon-volume-up" /></button>
+    </div>
+    <span class="phonetic" ng-show="onPronounce"><span ng-bind-html="live.phonetic" /></span>
+</div>

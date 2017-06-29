@@ -1,0 +1,8 @@
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\DBAccessor.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\DBAccessor.pdb
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\log4net.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\System.Data.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\System.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\bin\WordCurationSite\System.Xml.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\obj\WordCurationSite\DBAccessor.dll
+C:\Users\RedpeaksDev\Desktop\SourceTrunk\Utility\DBAccessor\obj\WordCurationSite\DBAccessor.pdb

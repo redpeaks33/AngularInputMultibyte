@@ -1,0 +1,25 @@
+﻿@media screen and (max-width: 1023px) {
+    .logo {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: x-large;
+    }
+
+    .btn-custom {
+        height: 70px;
+        width: 70px;
+        margin: 0px 5px 0px 5px;
+    }
+
+    .span {
+        fong-size: x-large;
+    }
+
+    .social-button-area {
+        float: right;
+        vertical-align: middle;
+        margin: 0px 0px 0px 0px;
+    }
+}

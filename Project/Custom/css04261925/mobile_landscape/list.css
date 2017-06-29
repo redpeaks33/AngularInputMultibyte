@@ -1,0 +1,77 @@
+﻿@media screen and (max-width: 1080px) and (orientation:landscape) {
+    .listPane {
+        max-height: 400vh; /*diff*/
+        padding: 10px 100px 0px 0px; /*diff*/
+    }
+
+    .RowSelected {
+    }
+
+        .RowSelected:hover {
+            background-color: lightcoral;
+        }
+
+    /*diff*/
+    .searchbox {
+    }
+
+    .functionArea {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    /*diff*/
+    .baseContainerPane {
+        text-align: center;
+        padding: 0px 0px 0px -5px;
+    }
+    /*diff*/
+    .social-button {
+        margin: 0px 0px 0px 0px;
+        height: 70px;
+        width: 70px;
+    }
+    /*diff*/
+    input[type="text"] {
+        font-size: 24px;
+        height: 70px;
+    }
+
+    /*diff*/
+    .function-button-area {
+        float: right;
+        margin: 0px -100px 5px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .container {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .btn-rank {
+        height: 70px;
+        width: 140px;
+        font-size: 32px;
+        background-color: maroon;
+        color: white;
+    }
+
+    .btn-select {
+        font-size: 24px;
+        background-color: maroon;
+        color: white;
+    }
+
+    span {
+        color: white;
+    }
+
+    .tableArea {
+        width: 100%;
+        margin: 0px 100px 0px 10px;
+        padding: 0px 40px 0px 0px;
+    }
+
+    table {
+    }
+}
